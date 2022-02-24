@@ -295,16 +295,16 @@ namespace Darwin {
 			}
 
 			enum Option {
-				SrcFD, // surfaced
-				SrcFileName, // surfaced
-				DstFD, // surfaced
-				DstFileName, // surfaced
-				Quarantine,
-				StatusCB, // surfaced
-				StatusCtx, // surfaced
-				Copied, //surfaced
-				XAttrName, // surfaced
-				WasCloned
+				SrcFD = 1, // surfaced
+				SrcFileName = 2, // surfaced
+				DstFD = 3, // surfaced
+				DstFileName = 4, // surfaced
+				Quarantine = 5,
+				StatusCB = 6, // surfaced
+				StatusCtx = 7, // surfaced
+				Copied = 8, //surfaced
+				XAttrName = 9, // surfaced
+				WasCloned = 10
 			}
 
 			[DllImport ("libc")]
